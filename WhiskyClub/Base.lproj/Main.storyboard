@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhiskyClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whisky.png" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-8z-x8Y">
+                                <rect key="frame" x="0.0" y="20" width="375" height="447"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTU-Uq-niI">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-4O-rED">
+                                        <rect key="frame" x="8" y="60" width="359" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Ex9-JZ-Hpz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-yF-gEH">
+                                        <rect key="frame" x="87" y="140" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="iOT-IR-ScB"/>
+                                            <constraint firstAttribute="height" constant="30" id="ir4-Ho-1jv"/>
+                                        </constraints>
+                                        <state key="normal" title="Select whisky image"/>
+                                        <connections>
+                                            <action selector="selectWhiskyImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uM2-mi-kTk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-2l-o4Y">
+                                        <rect key="frame" x="338" y="140" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="5Za-Bh-CMZ"/>
+                                            <constraint firstAttribute="height" constant="30" id="oZG-Jb-KFY"/>
+                                        </constraints>
+                                        <state key="normal" image="refresh_icon.png"/>
+                                        <connections>
+                                            <action selector="updateModelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nmM-AK-FDu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detected whisky" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xp-qF-ItN">
+                                        <rect key="frame" x="66" y="14" width="243" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="iYv-2I-X26"/>
+                                            <constraint firstAttribute="width" constant="243" id="wST-Jg-6i9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NHO-4O-rED" secondAttribute="trailing" constant="8" id="G14-8y-sbU"/>
+                                    <constraint firstItem="NHO-4O-rED" firstAttribute="leading" secondItem="YTU-Uq-niI" secondAttribute="leading" constant="8" id="HKU-1r-Gb2"/>
+                                    <constraint firstItem="yvv-yF-gEH" firstAttribute="top" secondItem="NHO-4O-rED" secondAttribute="bottom" constant="20" id="Pgb-dW-rn3"/>
+                                    <constraint firstAttribute="bottom" secondItem="yvv-yF-gEH" secondAttribute="bottom" constant="30" id="Ziv-tD-0CW"/>
+                                    <constraint firstItem="7Xp-qF-ItN" firstAttribute="centerX" secondItem="YTU-Uq-niI" secondAttribute="centerX" id="orJ-Zo-mD9"/>
+                                    <constraint firstItem="yvv-yF-gEH" firstAttribute="centerX" secondItem="YTU-Uq-niI" secondAttribute="centerX" id="qiD-gX-6Jy"/>
+                                    <constraint firstItem="z2f-2l-o4Y" firstAttribute="top" secondItem="yvv-yF-gEH" secondAttribute="top" id="rOL-e5-05f"/>
+                                    <constraint firstAttribute="trailing" secondItem="z2f-2l-o4Y" secondAttribute="trailing" constant="7" id="s6q-gK-FDu"/>
+                                    <constraint firstItem="NHO-4O-rED" firstAttribute="top" secondItem="7Xp-qF-ItN" secondAttribute="bottom" constant="25" id="trW-VR-LJD"/>
+                                    <constraint firstAttribute="height" constant="200" id="usT-yr-EDk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YTU-Uq-niI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3jB-F8-dLD"/>
+                            <constraint firstItem="pdb-8z-x8Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="59Y-ge-3lp"/>
+                            <constraint firstItem="YTU-Uq-niI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Pj-2E-dZA"/>
+                            <constraint firstItem="pdb-8z-x8Y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CZ9-hA-8HT"/>
+                            <constraint firstItem="YTU-Uq-niI" firstAttribute="top" secondItem="pdb-8z-x8Y" secondAttribute="bottom" id="Eoj-Kd-gUf"/>
+                            <constraint firstItem="YTU-Uq-niI" firstAttribute="top" secondItem="pdb-8z-x8Y" secondAttribute="bottom" id="Uh4-QO-2am"/>
+                            <constraint firstItem="pdb-8z-x8Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aUg-sV-JwF"/>
+                            <constraint firstItem="YTU-Uq-niI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lUY-AW-Ws8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="detectedHeader" destination="7Xp-qF-ItN" id="cWA-NX-vzH"/>
+                        <outlet property="detectedWhisky" destination="NHO-4O-rED" id="qkx-MH-yfe"/>
+                        <outlet property="imageView" destination="pdb-8z-x8Y" id="1oZ-pW-O8i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="refresh_icon.png" width="2400" height="2400"/>
+        <image name="whisky.png" width="200" height="200"/>
+    </resources>
+</document>

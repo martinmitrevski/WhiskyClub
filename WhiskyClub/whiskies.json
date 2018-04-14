@@ -1,0 +1,187 @@
+{
+	"whiskies": [{
+			"label": "amrut",
+			"name": "Amrut"
+		},
+		{
+			"label": "ardbeg",
+			"name": "Ardbeg"
+		},
+		{
+			"label": "auchentoshan_blood",
+			"name": "Auchentoshan Blood Oak"
+		},
+		{
+			"label": "ballantines",
+			"name": "Ballantines"
+		},
+		{
+			"label": "bowmore_10",
+			"name": "Bowmore 10 years"
+		},
+		{
+			"label": "breton",
+			"name": "Breton"
+		},
+		{
+			"label": "bruichladdich_8",
+			"name": "Bruichladdich 8 years"
+		},
+		{
+			"label": "bushmills_10",
+			"name": "Bushmills 10 years"
+		},
+		{
+			"label": "bushmills_triple",
+			"name": "Bushmills Triple Distilled"
+		},
+		{
+			"label": "cardhu_12",
+			"name": "Cardhu 12 years"
+		},
+		{
+			"label": "chita",
+			"name": "Chita"
+		},
+		{
+			"label": "chivas_12",
+			"name": "Chivas Regal 12 years"
+		},
+		{
+			"label": "dalmore_12",
+			"name": "Dalmore 12 years old"
+		},
+		{
+			"label": "dewars_12",
+			"name": "Dewars 12 years old"
+		},
+		{
+			"label": "fourroses",
+			"name": "Four Roses"
+		},
+		{
+			"label": "glenfiddich_12",
+			"name": "Glenfiddich 12 years old"
+		},
+		{
+			"label": "glenfiddich_15",
+			"name": "Glenfiddich 15 years old"
+		},
+		{
+			"label": "glengrant",
+			"name": "Glen Grant"
+		},
+		{
+			"label": "glenlivet",
+			"name": "Glenlivet"
+		},
+		{
+			"label": "glenmorangie",
+			"name": "Glenmorangie"
+		},
+		{
+			"label": "glenmoray",
+			"name": "Glen Moray"
+		},
+		{
+			"label": "hibiki",
+			"name": "Hibiki"
+		},
+		{
+			"label": "highlandpark",
+			"name": "Highland Park"
+		},
+		{
+			"label": "inchmurrin_12",
+			"name": "Inchmurrin 12 years"
+		},
+		{
+			"label": "jack_single",
+			"name": "Jack Daniels Single Barrel"
+		},
+		{
+			"label": "jameson",
+			"name": "Jameson"
+		},
+		{
+			"label": "jimbeam",
+			"name": "Jim Beam"
+		},
+		{
+			"label": "johnnie_black",
+			"name": "Johnnie Walker Black Label"
+		},
+		{
+			"label": "johnnie_doubleblack",
+			"name": "Johnnie Walker Double Black"
+		},
+		{
+			"label": "johnnie_gold",
+			"name": "Johnnie Walker Gold Label"
+		},
+		{
+			"label": "lagavulin_16",
+			"name": "Lagavulin 16 years"
+		},
+		{
+			"label": "laphroaig_10",
+			"name": "Laphroaig 10 years"
+		},
+		{
+			"label": "laphroaig_select",
+			"name": "Laphroaig Select"
+		},
+		{
+			"label": "mackmyra",
+			"name": "Mackmyra"
+		},
+		{
+			"label": "monkeyshoulder",
+			"name": "Monkey Shoulder"
+		},
+		{
+			"label": "nikka",
+			"name": "Nikka"
+		},
+		{
+			"label": "nikka_coffey",
+			"name": "Nikka Coffey Malt"
+		},
+		{
+			"label": "talisker_darkstorm",
+			"name": "Talisker Darkstorm"
+		},
+		{
+			"label": "teachers",
+			"name": "Teachers"
+		},
+		{
+			"label": "teeling",
+			"name": "Teeling"
+		},
+		{
+			"label": "teeling_single",
+			"name": "Teeling Single Malt"
+		},
+		{
+			"label": "tomatin_12",
+			"name": "Tomatin 12 years"
+		},
+		{
+			"label": "tullamore",
+			"name": "Tullamore Dew"
+		},
+		{
+			"label": "whitehorse",
+			"name": "White Horse"
+		},
+		{
+			"label": "wildturkey",
+			"name": "Wild Turkey"
+		},
+		{
+			"label": "yamazaki_12",
+			"name": "Yamazaki 12 years"
+		}
+	]
+}

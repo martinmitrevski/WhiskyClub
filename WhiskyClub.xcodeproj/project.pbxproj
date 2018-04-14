@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E897961D2080C47600E35B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897961C2080C47600E35B93 /* AppDelegate.swift */; };
+		E897961F2080C47600E35B93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897961E2080C47600E35B93 /* ViewController.swift */; };
+		E89796222080C47600E35B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89796202080C47600E35B93 /* Main.storyboard */; };
+		E89796242080C47600E35B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89796232080C47600E35B93 /* Assets.xcassets */; };
+		E89796272080C47600E35B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89796252080C47600E35B93 /* LaunchScreen.storyboard */; };
+		E897962F2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E897962E2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel */; };
+		E89796332080D57C00E35B93 /* WhiskyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89796322080D57C00E35B93 /* WhiskyService.swift */; };
+		E89796352080D5CA00E35B93 /* whiskies.json in Resources */ = {isa = PBXBuildFile; fileRef = E89796342080D5CA00E35B93 /* whiskies.json */; };
+		E89796372080DD6800E35B93 /* refresh_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E89796362080DD6800E35B93 /* refresh_icon.png */; };
+		E89CA1C22081F9D30053C46B /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */; };
+		E89CA1C42081FB380053C46B /* VisualRecognitionV3.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E89CA1C62081FE880053C46B /* whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = E89CA1C52081FE880053C46B /* whisky.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E89CA1C32081FB2B0053C46B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E89CA1C42081FB380053C46B /* VisualRecognitionV3.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E89796192080C47600E35B93 /* WhiskyClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskyClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E897961C2080C47600E35B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E897961E2080C47600E35B93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E89796212080C47600E35B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E89796232080C47600E35B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E89796262080C47600E35B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E89796282080C47600E35B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E897962E2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhiskyRecognizer_646540482.mlmodel; sourceTree = "<group>"; };
+		E89796322080D57C00E35B93 /* WhiskyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskyService.swift; sourceTree = "<group>"; };
+		E89796342080D5CA00E35B93 /* whiskies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whiskies.json; sourceTree = "<group>"; };
+		E89796362080DD6800E35B93 /* refresh_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_icon.png; sourceTree = "<group>"; };
+		E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = SOURCE_ROOT; };
+		E89CA1C52081FE880053C46B /* whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whisky.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E89796162080C47600E35B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89CA1C22081F9D30053C46B /* VisualRecognitionV3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E89796102080C47600E35B93 = {
+			isa = PBXGroup;
+			children = (
+				E897961B2080C47600E35B93 /* WhiskyClub */,
+				E897961A2080C47600E35B93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E897961A2080C47600E35B93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E89796192080C47600E35B93 /* WhiskyClub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E897961B2080C47600E35B93 /* WhiskyClub */ = {
+			isa = PBXGroup;
+			children = (
+				E89CA1C12081F9D30053C46B /* VisualRecognitionV3.framework */,
+				E897961C2080C47600E35B93 /* AppDelegate.swift */,
+				E897961E2080C47600E35B93 /* ViewController.swift */,
+				E897962E2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel */,
+				E89796202080C47600E35B93 /* Main.storyboard */,
+				E89796232080C47600E35B93 /* Assets.xcassets */,
+				E89796252080C47600E35B93 /* LaunchScreen.storyboard */,
+				E89796282080C47600E35B93 /* Info.plist */,
+				E89796322080D57C00E35B93 /* WhiskyService.swift */,
+				E89796342080D5CA00E35B93 /* whiskies.json */,
+				E89796362080DD6800E35B93 /* refresh_icon.png */,
+				E89CA1C52081FE880053C46B /* whisky.png */,
+			);
+			path = WhiskyClub;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E89796182080C47600E35B93 /* WhiskyClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E897962B2080C47600E35B93 /* Build configuration list for PBXNativeTarget "WhiskyClub" */;
+			buildPhases = (
+				E89796152080C47600E35B93 /* Sources */,
+				E89796162080C47600E35B93 /* Frameworks */,
+				E89796172080C47600E35B93 /* Resources */,
+				E89CA1C32081FB2B0053C46B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhiskyClub;
+			productName = WhiskyClub;
+			productReference = E89796192080C47600E35B93 /* WhiskyClub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E89796112080C47600E35B93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Mitrevski;
+				TargetAttributes = {
+					E89796182080C47600E35B93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E89796142080C47600E35B93 /* Build configuration list for PBXProject "WhiskyClub" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E89796102080C47600E35B93;
+			productRefGroup = E897961A2080C47600E35B93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E89796182080C47600E35B93 /* WhiskyClub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E89796172080C47600E35B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89796352080D5CA00E35B93 /* whiskies.json in Resources */,
+				E89796272080C47600E35B93 /* LaunchScreen.storyboard in Resources */,
+				E89CA1C62081FE880053C46B /* whisky.png in Resources */,
+				E89796372080DD6800E35B93 /* refresh_icon.png in Resources */,
+				E89796242080C47600E35B93 /* Assets.xcassets in Resources */,
+				E89796222080C47600E35B93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E89796152080C47600E35B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E897962F2080C48800E35B93 /* WhiskyRecognizer_646540482.mlmodel in Sources */,
+				E897961F2080C47600E35B93 /* ViewController.swift in Sources */,
+				E89796332080D57C00E35B93 /* WhiskyService.swift in Sources */,
+				E897961D2080C47600E35B93 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E89796202080C47600E35B93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E89796212080C47600E35B93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E89796252080C47600E35B93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E89796262080C47600E35B93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E89796292080C47600E35B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E897962A2080C47600E35B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E897962C2080C47600E35B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAM22JDBB2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WhiskyClub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrevski.WhiskyClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E897962D2080C47600E35B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAM22JDBB2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WhiskyClub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitrevski.WhiskyClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E89796142080C47600E35B93 /* Build configuration list for PBXProject "WhiskyClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E89796292080C47600E35B93 /* Debug */,
+				E897962A2080C47600E35B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E897962B2080C47600E35B93 /* Build configuration list for PBXNativeTarget "WhiskyClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E897962C2080C47600E35B93 /* Debug */,
+				E897962D2080C47600E35B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E89796112080C47600E35B93 /* Project object */;
+}

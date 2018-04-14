@@ -42,10 +42,12 @@ class ViewController: UIViewController {
         }
         
         let photoSourcePicker = UIAlertController()
-        let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { [unowned self] _ in
+        let takePhoto = UIAlertAction(title: "Take Photo", style: .default) {
+            [unowned self] _ in
             self.presentPhotoPicker(sourceType: .camera)
         }
-        let choosePhoto = UIAlertAction(title: "Choose Photo", style: .default) { [unowned self] _ in
+        let choosePhoto = UIAlertAction(title: "Choose Photo", style: .default) {
+            [unowned self] _ in
             self.presentPhotoPicker(sourceType: .photoLibrary)
         }
         
@@ -89,7 +91,6 @@ class ViewController: UIViewController {
     // MARK: - Whisky classification
     
     func classifyImage(for image: UIImage, localThreshold: Double = 0.0) {
-
         detectedWhisky.text = "Detecting whisky..."
 
         let failure = { (error: Error) in
@@ -102,8 +103,9 @@ class ViewController: UIViewController {
                                                  failure: failure) { classifiedImages in
 
             var topClassification = ""
-
-            if classifiedImages.images.count > 0 && classifiedImages.images[0].classifiers.count > 0 && classifiedImages.images[0].classifiers[0].classes.count > 0 {
+            if classifiedImages.images.count > 0
+                && classifiedImages.images[0].classifiers.count > 0
+                && classifiedImages.images[0].classifiers[0].classes.count > 0 {
                 topClassification = classifiedImages.images[0].classifiers[0].classes[0].className
             }
             
@@ -140,6 +142,6 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         imageView.contentMode = UIViewContentMode.scaleAspectFit
         imageView.image = image
-        classifyImage(for: image, localThreshold: 0.2)
+        classifyImage(for: image, localThreshold: 0.51)
     }
 }
